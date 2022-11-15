@@ -28,13 +28,18 @@ a{
     font-family: 'Whitney', sans-serif;
 }
 
-p{
-    line-height: 1em;
-}
-
 
 /* ----HEADER----- */
 
+.top-bar:first-child{
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+header{
+    background-color: #3161e0;
+}
 .top-bar{
     padding: 20px;
 }
@@ -45,16 +50,27 @@ p{
     padding: 5px;
 }
 
+.logo img{
+    max-width: 100%;
+}
+
 /* Barra di Navigazione */
 nav {
     width: 60%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-nav li{
+nav ul li{
     display: inline-block;
+    padding: 0 15px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
 /* Login */
 .login{
     width: 20%;
@@ -62,15 +78,32 @@ nav li{
     text-align: right;
 }
 
+.jumbotron{
+    width: 75%;
+    min-height: 300px;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.jumbotron p{
+    text-align: center;
+    margin: 20px;
+}
+
+.jumbotron h1{
+    margin: 20px;
+}
 
 /* -----MAIN----- */
 /* HEADER MAIN */
-main header{
+.header-section{
     padding: 30px 0;
     justify-content: center;
 }
 
 /* SECTION */
+
 main > section{
     padding: 30px 0;
 }
@@ -87,6 +120,13 @@ main > section{
     width: 40%;
 }
 
+.image img{
+    width: 100%;
+}
+
+
+
+/* ULTIMO CONTENITORE */
 .full-container{
     width: 100%;
 }
@@ -124,18 +164,20 @@ hr{
 
 
 
+
+
 /* ---- DEBUG ----- */
 
 /* HEADER */
-.debug header {
+/* .debug header {
     background-color: lightblue;
-}
+} */
 
-.debug header div div,
+/* .debug header div div,
 .debug header div nav {
     background-color: goldenrod;
-    border: 1px dashed black;
-}
+    border: 1px dashed;
+} */
 
 /* MAIN */
 .debug main header{
