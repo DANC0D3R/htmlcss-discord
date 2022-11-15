@@ -12,9 +12,19 @@
     display: flex;
 }
 
+.flex{
+    display: flex;
+}
+
 ul {
     list-style-type: none;
 }
+
+
+*{
+    font-family: 'Whitney', sans-serif;
+}
+
 
 
 /* ----HEADER----- */
@@ -33,7 +43,6 @@ ul {
 nav {
     width: 60%;
     text-align: center;
-    padding: 5px;
 }
 
 nav li{
@@ -93,7 +102,6 @@ hr{
 
 .info-list{
     width: calc(100% / 3 * 2);
-    display: flex;
 }
 
 .info-list div{
